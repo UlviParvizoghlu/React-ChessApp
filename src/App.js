@@ -3,6 +3,7 @@ import { DndProvider } from 'react-dnd'
 import Board from './Board';
 import subjectGame from './Game';
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 function App() {
   const [board, setBoard] = useState([])
   useEffect(()=>{
@@ -12,7 +13,10 @@ function App() {
   },[])
   return (
     <DndProvider backend={HTML5Backend}>
-    <div className='bg-black h-screen' >
+      <Helmet>
+        <title>Chess App</title>
+      </Helmet>
+    <div className='bg-black h-screen flex justify-center items-center' >
       <Board board={board} />
     </div>
     </DndProvider>
