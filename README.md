@@ -1,4 +1,4 @@
-Deploying: https://react-chess-app.vercel.app/
+
 
 #  `React - Chess App (ChessJs, ReactDnD, RxJS, Tailwind CSS) `
 
